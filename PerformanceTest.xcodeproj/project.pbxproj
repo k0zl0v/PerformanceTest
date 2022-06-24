@@ -14,11 +14,13 @@
 		1CBF3BF62864A73F009908E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3BF52864A73F009908E8 /* MainViewController.swift */; };
 		1CBF3BF92864A950009908E8 /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3BF82864A950009908E8 /* FrameViewController.swift */; };
 		1CBF3BFC2864A9AA009908E8 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3BFB2864A9AA009908E8 /* AutoLayoutViewController.swift */; };
-		1CBF3BFF2864A9BB009908E8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3BFE2864A9BB009908E8 /* SwiftUIView.swift */; };
+		1CBF3BFF2864A9BB009908E8 /* SwiftUIViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3BFE2864A9BB009908E8 /* SwiftUIViewIdentifiable.swift */; };
 		1CBF3C012864A9D3009908E8 /* FrameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3C002864A9D3009908E8 /* FrameTableViewCell.swift */; };
 		1CBF3C032864ABC3009908E8 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3C022864ABC3009908E8 /* CellViewModel.swift */; };
 		1CBF3C092864BFEC009908E8 /* AutoLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3C082864BFEC009908E8 /* AutoLayoutTableViewCell.swift */; };
 		1CBF3C0B2864C397009908E8 /* SwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF3C0A2864C397009908E8 /* SwiftUICell.swift */; };
+		1CDB195B2865DB2000B04B77 /* SwiftUICell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB195A2865DB2000B04B77 /* SwiftUICell2.swift */; };
+		1CDB195D2865F0AD00B04B77 /* SwiftUIViewRangeIndixies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB195C2865F0AD00B04B77 /* SwiftUIViewRangeIndixies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +33,13 @@
 		1CBF3BF52864A73F009908E8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1CBF3BF82864A950009908E8 /* FrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
 		1CBF3BFB2864A9AA009908E8 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
-		1CBF3BFE2864A9BB009908E8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		1CBF3BFE2864A9BB009908E8 /* SwiftUIViewIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewIdentifiable.swift; sourceTree = "<group>"; };
 		1CBF3C002864A9D3009908E8 /* FrameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTableViewCell.swift; sourceTree = "<group>"; };
 		1CBF3C022864ABC3009908E8 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		1CBF3C082864BFEC009908E8 /* AutoLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		1CBF3C0A2864C397009908E8 /* SwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICell.swift; sourceTree = "<group>"; };
+		1CDB195A2865DB2000B04B77 /* SwiftUICell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICell2.swift; sourceTree = "<group>"; };
+		1CDB195C2865F0AD00B04B77 /* SwiftUIViewRangeIndixies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewRangeIndixies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 		1CBF3BFD2864A9AF009908E8 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1CBF3BFE2864A9BB009908E8 /* SwiftUIView.swift */,
+				1CDB195C2865F0AD00B04B77 /* SwiftUIViewRangeIndixies.swift */,
+				1CBF3BFE2864A9BB009908E8 /* SwiftUIViewIdentifiable.swift */,
 				1CBF3C0A2864C397009908E8 /* SwiftUICell.swift */,
+				1CDB195A2865DB2000B04B77 /* SwiftUICell2.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -180,14 +186,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CBF3BE22864A6C0009908E8 /* AppDelegate.swift in Sources */,
+				1CDB195D2865F0AD00B04B77 /* SwiftUIViewRangeIndixies.swift in Sources */,
 				1CBF3BE42864A6C0009908E8 /* SceneDelegate.swift in Sources */,
 				1CBF3C0B2864C397009908E8 /* SwiftUICell.swift in Sources */,
 				1CBF3C032864ABC3009908E8 /* CellViewModel.swift in Sources */,
-				1CBF3BFF2864A9BB009908E8 /* SwiftUIView.swift in Sources */,
+				1CBF3BFF2864A9BB009908E8 /* SwiftUIViewIdentifiable.swift in Sources */,
 				1CBF3C012864A9D3009908E8 /* FrameTableViewCell.swift in Sources */,
 				1CBF3BF92864A950009908E8 /* FrameViewController.swift in Sources */,
 				1CBF3BF62864A73F009908E8 /* MainViewController.swift in Sources */,
 				1CBF3C092864BFEC009908E8 /* AutoLayoutTableViewCell.swift in Sources */,
+				1CDB195B2865DB2000B04B77 /* SwiftUICell2.swift in Sources */,
 				1CBF3BFC2864A9AA009908E8 /* AutoLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

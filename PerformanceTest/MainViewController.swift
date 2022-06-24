@@ -13,7 +13,8 @@ class MainViewController: UITableViewController {
     enum Cell: String, CaseIterable {
         case frame = "Frame"
         case autolayout = "AutoLayout"
-        case swiftUI = "SwiftUI"
+        case swiftUIIdentifiable = "SwiftUI Identifiable"
+        case swiftUIIndexies = "SwiftUI Range Indexes"
     }
     
     private let cellIdentifier = "MainCell"
@@ -42,8 +43,10 @@ class MainViewController: UITableViewController {
             navigationController?.pushViewController(FrameViewController(), animated: true)
         case .autolayout:
             navigationController?.pushViewController(AutoLayoutViewController(), animated: true)
-        case .swiftUI:
-            navigationController?.pushViewController(UIHostingController(rootView: SwiftUIView()), animated: true)
+        case .swiftUIIdentifiable:
+            navigationController?.pushViewController(UIHostingController(rootView: SwiftUIViewIdentifiable()), animated: true)
+        case .swiftUIIndexies:
+            navigationController?.pushViewController(UIHostingController(rootView: SwiftUIViewRangeIndixies()), animated: true)
         }
     }
 
