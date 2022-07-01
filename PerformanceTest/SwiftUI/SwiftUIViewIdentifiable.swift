@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct SwiftUIViewIdentifiable: View {
-        
+    
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(CellViewModel.exampleData) { viewModel in
-                    SwiftUICell(viewModel: viewModel)
+        GeometryReader { geometryProxy in
+            TrackingScrollView(onContentOffsetChange: onChangeOffset) {
+                LazyVStack {
+                    ForEach(CellViewModel.exampleData) { viewModel in
+                        SwiftUICell(viewModel: viewModel) {
+                            print("ON TAP ACTION: \(viewModel)")
+                        }
+                    }
                 }
             }
+            .environment(\.safeAreaInsets, geometryProxy.safeAreaInsets)
+            .ignoresSafeArea(edges: .horizontal)
         }
     }
+    
+    private func onChangeOffset(_ point: CGPoint) {
+        print("Content Offset: \(point)")
+    }
+    
 }
 
