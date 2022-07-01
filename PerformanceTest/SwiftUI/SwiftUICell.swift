@@ -34,8 +34,6 @@ struct SwiftUICell: View {
         .padding(.leading, 16)
         .padding(safeAreaPadding)
         .lineLimit(1)
-        .overlay(separator, alignment: .bottom)
-        .padding(.horizontal, 16)
         .allowsHitTesting(false)
         .background(
             // Button is placed here in order to improve table performance
